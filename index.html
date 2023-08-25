@@ -53,7 +53,7 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             </div>
                             <h2 onclick="handleClickBtn(this)" class="card-title">K. Accessories</h2>
-                            <h6 class="text-gray-400 text-sm"> 39.00< TK</h6>
+                            <h6 class="text-gray-400 text-sm"> <span>39.00</span>TK</h6>
 
 
                         </div>
@@ -163,9 +163,11 @@
                 <div class="card-body">
                     <h2 class="card-title">Have coupon?</h2>
                     <div class="flex">
-                        <input class="border border-blue-100" type="text" name="" id="" placeholder="Coupon code">
+                        <input id="correct-coupon" class="border border-blue-100" type="text" name="" id=""
+                            placeholder="Coupon code">
                         <div class="card-actions justify-end">
-                            <button class="btn btn-secondary pb-1 font-semibold text-l">Apply</button>
+                            <button id="btn-apply" class="btn btn-secondary pb-1 font-semibold text-l "
+                                disabled>Apply</button>
                         </div>
                     </div>
                 </div>
@@ -174,9 +176,9 @@
                 <div class="selected-products" id="selected-products"></div>
                 <hr />
                 <div class="cart-box">
-                    <h6>Total Price</h6>
-                    <h6>Discount</h6>
-                    <h6>Total</h6>
+                    <h6>Total Price: <span id="total">00</span>TK</h6>
+                    <h6>Discount: <span id="discount">00</span>TK</h6>
+                    <h6>Total: <span id="final-total">00</span>TK </h6>
 
                     <hr />
 
