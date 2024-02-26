@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <div class="bg-orange-100 w-auto h-[500px] flex flex-col lg:flex-row text-center justify-center ">
+        <div class="bg-orange-100 w-auto lg:h-[500px] flex flex-col lg:flex-row text-center justify-center">
             <div class="text-black text-center w-96">
                 <h5 class="font-semibold pt-36 text-x pb-6 ">---SALE FEVER---</h5>
                 <h1 class="font-extrabold text-4xl pb-6">Purchase TK 200 or <br> above & get <span
@@ -38,7 +38,7 @@
         <section>
             <div class="pl-20">
                 <h1 class="text-black font-bold text-lg pt-12 pb-6">Kitchenware</h1>
-                <div class="flex flex-cols-1 mb:flex-rows-2 lg:flex-rows-3 gap-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
                     <!--prod1-->
 
@@ -99,7 +99,7 @@
             </div>
             <div class="pl-20">
                 <h1 class="text-black font-bold text-lg pt-12 pb-6">Sportswear</h1>
-                <div class="flex flex-cols-1 mb:flex cols-2 lg:flex-rows-3 gap-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
                     <!--prod4-->
 
@@ -158,8 +158,8 @@
 
         </section>
 
-        <section class="pr-12 pt-24 ">
-            <div class="card w-96 bg-base-100 shadow-xl mb-5 ">
+        <section class="pr-12 pt-24  ">
+            <div class="card w-96 bg-base-100 shadow-xl mb-5 md:w-full lg:w-full mx-auto ">
                 <div class="card-body">
                     <h2 class="card-title">Have coupon?</h2>
                     <div class="flex">
@@ -172,7 +172,9 @@
                     </div>
                 </div>
             </div>
-            <div class=" card w-96 bg-base-100 shadow-xl right-side-container col-4 text-center pt-12 shadow-xl">
+
+            <div
+                class=" card w-96 bg-base-100  right-side-container col-4 text-center pt-12 shadow-xl md:w-full lg:w-full mx-auto">
                 <div class="selected-products" id="selected-products"></div>
                 <hr />
                 <div class="cart-box">
@@ -184,7 +186,9 @@
 
                     <button id="btn-Purchase" class="btn btn-secondary my-2" disabled>Make Purchase</button>
 
+
                 </div>
+
 
             </div>
         </section>

@@ -2,9 +2,6 @@
 let total = 0;
 let couponApplied = false;
 
-
-
-
 document.getElementById('total').addEventListener('DOMSubtreeModified', function () {
     const totalPrice = parseInt(document.getElementById('total').innerText);
     const purchaseBtn = document.getElementById('btn-Purchase');
@@ -31,10 +28,6 @@ document.getElementById('total').addEventListener('DOMSubtreeModified', function
         document.getElementById('discount').innerText = discountAmount.toFixed(2);
         document.getElementById('final-total').innerText = finalTotal.toFixed(2);
     });
-
-
-
-
 
 });
 
